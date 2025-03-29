@@ -1,0 +1,12 @@
+dataset: mnist
+num_clients: 5
+seeds: 
+  - 0
+iid: False
+non_iid_level: 0.05
+
+batch_size: 32
+num_rounds: 200
+local_epochs: 1
+eval_every: 5
+participation: 1.0
