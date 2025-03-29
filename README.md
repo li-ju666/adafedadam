@@ -1,6 +1,6 @@
 # Accelerating Fair Federated Learning: Adaptive Federated Adam
 
-This repository contains the implementation for the publication [Accelerating Fair Federated Learning: Adaptive Federated Adam.](https://ieeexplore.ieee.org/abstract/document/10584508/references#references) The goal of this work is to address fairness and efficiency challenges in federated learning with an adaptive optimization strategy.
+This repository contains the implementation for the publication [Accelerating Fair Federated Learning: Adaptive Federated Adam.](https://ieeexplore.ieee.org/abstract/document/10584508) The goal of this work is to address fairness and efficiency challenges in federated learning with an adaptive optimization strategy.
 
 The repository includes code to generate data, run training for the Adaptive Federated Adam method, and configure experiments via a centralized configuration file.
 
@@ -22,7 +22,7 @@ The repository includes code to generate data, run training for the Adaptive Fed
    cd adafedadam
    ```
 
-2. Install the dependencies using `pip` and the provided `requirements.txt`:
+2. Install the dependencies using `pip` and the provided [`requirements.txt`](requirements.txt):
 
    ```bash
    pip install -r requirements.txt
@@ -36,7 +36,7 @@ To prepare and generate the dataset required for training, run:
 python3 -m data_prepare.generate
 ```
 
-Both the dataset generating script and training script will read configurations (e.g., data paths, parameters, etc.) from the `config.yaml` file.
+Both the dataset generating script and training script will read configurations (e.g., data paths, parameters, etc.) from the [`config.yml`](config.yml) file.
 
 ## Training
 
@@ -46,7 +46,7 @@ Once the dataset is prepared, you can start training the model using the Adaptiv
 python3 main.py adafedadam
 ```
 
-The training script will also load configurations from the `config.yml` file. To modify any experiment settings (hyperparameters, data parameters, model configurations, etc.), please update `config.yml` accordingly.
+The training script will also load configurations from the [`config.yml`](config.yml) file. To modify any experiment settings (hyperparameters, data parameters, model configurations, etc.), please update [`config.yml`](config.yml) accordingly.
 
 ## Configuration
 
